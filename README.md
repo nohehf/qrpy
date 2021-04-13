@@ -21,12 +21,18 @@ As the development is not very advanced, they are limitations to it, including (
 
 ## How to use:
 
-    #To create a qr which contains 'hello world':
-    qr = Qr('hello world',mask=0,forceVersion=1,errorCorrectionLevel='L')
+	import Qr  
+    #To create a qr which contains 'github.com/nohehf/qrpy':  
+    qr = Qr(  
+    'github.com/nohehf/qrpy',  
+    mask=0,  
+    forceVersion=2,  
+    errorCorrectionLevel='L')  
     qr.save(path) #saves the image to the specified path
-    qr.Im #The pillow Image of the Qr
-    qr.matrix #The numpy array of the Qr
-    qr.finalBits #The raw bit strig encoded in the Qr, including error correction
+    
+    qr.Im #The pillow Image of the Qr  
+    qr.matrix #The numpy array of the Qr  
+    qr.finalBits #The raw bits string encoded in the Qr, including error correction
 
 
 ## Current version: v0
