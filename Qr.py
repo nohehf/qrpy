@@ -443,7 +443,7 @@ MASKS = {
     '7': lambda i,j : ((i*j) % 3 + i + j) % 2,
 }
 
-CSVPATH = 'qr_codes.csv'
+CSVPATH = 'qr.csv'
 
 if __name__ == '__main__':  
     qr = Qr('github.com/nohehf/qrpy',mask=0,forceVersion=2,errorCorrectionLevel='L')
